@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const buttons = {
+    backgroundColor: "black",
+    width: "190px",
+    minHeight: "90px",
+}
+const dashboard = {
+    backgroundColor: "white",
+    width: "50px",
+    minHeight: "60px",
+    color: "blue",
+    fontSize: "35px"
 }
 
-export default App;
+export const App = () => {
+    return (
+        <div style={{backgroundColor: "darkgrey", width: "300px", minHeight: "200px"}}>
+            <div>
+                <div style={dashboard}>
+                    0
+                </div>
+            </div>
+            <div style={buttons}>
+                <div>
+                    <button>inc</button>
+                </div>
+                <div>
+                    <button>reset</button>
+                </div>
+            </div>
+        </div>
+    )
+}
