@@ -1,15 +1,23 @@
 import React, {useState} from "react";
-import {Buttons} from "./Buttons";
-import {Dashboard} from "./Dashboard";
+import {Buttons} from "./Button";
+import {Monitor} from "./Monitor";
+import {Simulate} from "react-dom/test-utils";
+import reset = Simulate.reset;
+import {AppPropsType} from "../App";
 
-export const Counter = () => {
-    const [count, setCount] = useState(0);
+type counterPropsType = AppPropsType & {
+    Inc: () => void
+    Reset: () => void
+}
 
+export const Counter = (props: counterPropsType) => {
     return (
         <div style={{backgroundColor: "darkgrey", width: "300px", minHeight: "200px"}}>
-            <Dashboard count={count} setCount={setCount}
+            <Monitor value={props.startValue}/>
+            <Button
+                reset={props.Inc}
+                inc={props.Reset}
             />
-            <Buttons count={count} setCount={setCount}/>
         </div>
     )
 }

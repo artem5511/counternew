@@ -1,23 +1,19 @@
 import React from "react";
 
-const dashboard = {
+const monitor = {
     backgroundColor: "white",
     width: "50px",
     minHeight: "60px",
     color: "blue",
     fontSize: "35px"
 }
-type numPropsType = {
-    count: number
-    setCount: any
-}
 
-export const Dashboard = (props: numPropsType) => {
 
+export const Monitor = (props: numPropsType) => {
     return (
         <div>
-            <div style={dashboard}>
-                {props.count}
+            <div style={monitor}>
+
             </div>
         </div>
     )
