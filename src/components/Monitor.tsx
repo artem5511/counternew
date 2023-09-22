@@ -8,12 +8,15 @@ const monitor = {
     fontSize: "35px"
 }
 
+type monPropsType={
+    value: number
+}
 
-export const Monitor = (props: numPropsType) => {
+export const Monitor = (props: monPropsType) => {
     return (
         <div>
             <div style={monitor}>
-
+                {props.value}
             </div>
         </div>
     )

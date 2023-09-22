@@ -8,16 +8,14 @@ const button = {
 
 type buttonPropsType = {
     name: string
-    callback: () => void
 }
 
 
-export const Button = (props: buttonsPropsType ) => {
+export const Button = (props: buttonPropsType ) => {
        return (
         <div style={button}>
           <button>
               {props.name}
-              {props.callback}
           </button>
         </div>
     )

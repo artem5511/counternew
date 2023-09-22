@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Buttons} from "./Button";
+import {Button} from "./Button";
 import {Monitor} from "./Monitor";
 import {Simulate} from "react-dom/test-utils";
 import reset = Simulate.reset;
@@ -14,10 +14,8 @@ export const Counter = (props: counterPropsType) => {
     return (
         <div style={{backgroundColor: "darkgrey", width: "300px", minHeight: "200px"}}>
             <Monitor value={props.startValue}/>
-            <Button
-                reset={props.Inc}
-                inc={props.Reset}
-            />
-        </div>
-    )
+            <Button name={'Inc'}/>
+            <Button name={'Reset'}/>
+</div>
+)
 }
