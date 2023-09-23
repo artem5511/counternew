@@ -1,0 +1,25 @@
+.gmonitor {
+    border: 3px solid purple;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: black;
+    font-size: 70px;
+    color: greenyellow;
+    margin: 0px 0px 7px 0px;
+}
+
+.rmonitor {
+    border: 3px solid purple;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: black;
+    font-size: 80px;
+    color: red;
+    margin: 0px 0px 7px 0px;
+}

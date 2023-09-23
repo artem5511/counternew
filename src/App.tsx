@@ -2,30 +2,28 @@ import React, {useState} from 'react';
 import {Counter} from "./components/Counter";
 
 
-export type AppPropsType = {
-    startValue: number
-    maxValue: number
-}
 
-export const App = (props: AppPropsType) => {
-    let [count, setCount] = useState<number>(props.startValue);
-
+export const App = () => {
+    let maxValue = 7
+    // let startValue = 0
+    let [startValue, setCount] = useState<number>(0);
+    // let [disable, setDisabled] = useState(false)
     const Inc = () => {
-        if (count < props.maxValue) {
-            setCount(count + 1)
+        // if (startValue < maxValue) {
+            setCount(startValue + 1)
         }
-    }
     const Reset = () => {
-        setCount(props.startValue)
+        setCount(0)
     }
 
 
     return (
         <Counter
-            startValue={props.startValue}
-            maxValue={props.startValue}
+            startValue={startValue}
+            maxValue={maxValue}
             Inc={Inc}
             Reset={Reset}
+            // value={startValue}
         />
     )
 }

@@ -1,24 +1,18 @@
 import React from "react";
+import s from './monitor.module.css';
 
-const monitor = {
-    backgroundColor: "white",
-    width: "50px",
-    minHeight: "60px",
-    color: "blue",
-    fontSize: "35px"
-}
-
-type monPropsType={
+type MonPropsType={
     value: number
+    maxValue: number
 }
 
-export const Monitor = (props: monPropsType) => {
+
+export const Monitor = (props: MonPropsType) => {
     return (
         <div>
-            <div style={monitor}>
+            <div className={props.value === props.maxValue ? s.rmonitor : s.gmonitor}>
                 {props.value}
             </div>
         </div>
     )
-
 }

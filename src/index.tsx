@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <React.StrictMode>
-        <App startValue={0} maxValue={9}/>
+        <App/>
     </React.StrictMode>
 );
 

@@ -1,4 +1,4 @@
-import React, {ChangeEvent} from "react";
+import React from "react";
 
 const button = {
     backgroundColor: "black",
@@ -6,18 +6,22 @@ const button = {
     minHeight: "90px",
 }
 
-type buttonPropsType = {
+type ButtonPropsType =  {
     name: string
+    callback: () => void
+    disabled?: boolean
+    value: number
 }
 
-
-export const Button = (props: buttonPropsType ) => {
-       return (
+export const Button = (props: ButtonPropsType) => {
+    return (
         <div style={button}>
-          <button>
-              {props.name}
-          </button>
+            <button
+                onClick={props.callback}
+                disabled={props.disabled}
+            >
+                {props.name}
+            </button>
         </div>
     )
-
 }
