@@ -1,4 +1,10 @@
 body {
+  padding: 10% 0px 0px 0px;
+  /*height: 500px;*/
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

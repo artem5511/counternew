@@ -1,8 +1,8 @@
-
 import {Button} from "./Button";
 import {Monitor} from "./Monitor";
+import e from './сounter.module.css';
 
-type CounterPropsType =  {
+type CounterPropsType = {
     Inc: () => void
     Reset: () => void
     // value: number
@@ -14,26 +14,32 @@ export const Counter = (props: CounterPropsType) => {
 
     const disabled = props.startValue === props.maxValue
     const disabled2 = props.startValue === 0
-    console.log(disabled)
     return (
-        // <div className={style.counter}>
-        <>
-            <Monitor
-                value={props.startValue}
-                maxValue={props.maxValue}
-            />
-            <Button disabled={disabled}
-                    name={'Inc'}
-                    callback={props.Inc}
+        <div>
+            <div className={e.counter}>
+                <Monitor
                     value={props.startValue}
-            />
-            <Button  name={'Reset'}
-                    callback={props.Reset}
-                     disabled={disabled2}
-                     value={props.startValue}
-                   />
-</>
-        // </div>
-    )
+                    maxValue={props.maxValue}
+                />
 
+            </div>
+            <div className={e.but}>
+                <div className={e.buts}>
+                    <Button disabled={disabled}
+                            name={'Inc'}
+                            callback={props.Inc}
+                            value={props.startValue}
+                    />
+                </div>
+                <div className={e.buts}>
+                    <Button name={'Reset'}
+                            callback={props.Reset}
+                            disabled={disabled2}
+                            value={props.startValue}
+                />
+                </div>
+            </div>
+
+        </div>
+    )
 }

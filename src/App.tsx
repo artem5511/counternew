@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {Counter} from "./components/Counter";
-
+import './app.css';
 
 
 export const App = () => {
-    let maxValue = 7
+    let maxValue = 3
     // let startValue = 0
     let [startValue, setCount] = useState<number>(0);
     // let [disable, setDisabled] = useState(false)
