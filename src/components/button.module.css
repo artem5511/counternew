@@ -1,0 +1,27 @@
+
+.button {
+    border: none;
+    font: inherit;
+    color: greenyellow;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+    font-size: 40px;
+    height: 100px;
+    width: 100%;
+}
+
+.disbutton {
+    border: none;
+    font: inherit;
+    color: red;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+    font-size: 40px;
+    height: 100px;
+    width: 100%;
+}
+
