@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {Counter} from "./components/Counter";
 import './app.css';
 
-
 export const App = () => {
     let maxValue = 5
     // let startValue = 0
