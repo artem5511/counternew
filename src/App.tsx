@@ -4,7 +4,7 @@ import './app.css';
 
 
 export const App = () => {
-    let maxValue = 3
+    let maxValue = 5
     // let startValue = 0
     let [startValue, setCount] = useState<number>(0);
     // let [disable, setDisabled] = useState(false)
