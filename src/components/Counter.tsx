@@ -21,7 +21,6 @@ export const Counter = (props: CounterPropsType) => {
                     value={props.startValue}
                     maxValue={props.maxValue}
                 />
-
             </div>
             <div className={e.but}>
                 <div className={e.buts}>
@@ -39,7 +38,6 @@ export const Counter = (props: CounterPropsType) => {
                 />
                 </div>
             </div>
-
         </div>
     )
 }

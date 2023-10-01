@@ -14,8 +14,6 @@ export const App = () => {
     const Reset = () => {
         setCount(0)
     }
-
-
     return (
         <Counter
             startValue={startValue}

@@ -5,8 +5,6 @@ type MonPropsType={
     value: number
     maxValue: number
 }
-
-
 export const Monitor = (props: MonPropsType) => {
     return (
         <div>
