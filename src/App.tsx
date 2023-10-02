@@ -23,13 +23,6 @@ export const App = () => {
                 Reset={Reset}
                 // value={startValue}
             />
-            <Counter
-                startValue={startValue}
-                maxValue={maxValue}
-                Inc={Inc}
-                Reset={Reset}
-                // value={startValue}
-            />
         </>
     )
 }
