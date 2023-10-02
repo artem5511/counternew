@@ -9,18 +9,27 @@ export const App = () => {
     // let [disable, setDisabled] = useState(false)
     const Inc = () => {
         // if (startValue < maxValue) {
-            setCount(startValue + 1)
-        }
+        setCount(startValue + 1)
+    }
     const Reset = () => {
         setCount(0)
     }
     return (
-        <Counter
-            startValue={startValue}
-            maxValue={maxValue}
-            Inc={Inc}
-            Reset={Reset}
-            // value={startValue}
-        />
+        <>
+            <Counter
+                startValue={startValue}
+                maxValue={maxValue}
+                Inc={Inc}
+                Reset={Reset}
+                // value={startValue}
+            />
+            <Counter
+                startValue={startValue}
+                maxValue={maxValue}
+                Inc={Inc}
+                Reset={Reset}
+                // value={startValue}
+            />
+        </>
     )
 }
