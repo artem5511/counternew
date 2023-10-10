@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Counter} from "./components/Counter";
 import './app.css';
+import {Setcounter} from "./components/Setcounter";
 
 export const App = () => {
     let maxValue = 5
@@ -16,7 +17,7 @@ export const App = () => {
     }
     return (
         <>
-            <Counter
+            <Setcounter
                 startValue={startValue}
                 maxValue={maxValue}
                 Inc={Inc}
