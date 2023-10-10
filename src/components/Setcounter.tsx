@@ -1,5 +1,6 @@
 import {Button} from "./Button";
 import e from './setсounter.module.css';
+import w from './button.module.css';
 
 type CounterPropsType = {
     Inc: () => void
@@ -10,9 +11,6 @@ type CounterPropsType = {
 }
 
 export const Setcounter = (props: CounterPropsType) => {
-
-    const disabled = props.startValue === props.maxValue
-    const disabled2 = props.startValue === 0
     return (
         <div>
             <div className={e.counter}>
@@ -24,12 +22,8 @@ export const Setcounter = (props: CounterPropsType) => {
                 <div>
                     <input className={e.inputs} type="number"/>
                 </div>
-                <div className={e.buts}>
-                    <Button name={'Reset'}
-                            callback={props.Reset}
-                            disabled={disabled2}
-                            value={props.startValue}
-                />
+                <div>
+                    <input className={e.inputs} type="number"/>
                 </div>
             </div>
         </div>

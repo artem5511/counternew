@@ -4,12 +4,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 200px;
     width: 300px;
     /*background-color: black;*/
     font-size: 70px;
     color: greenyellow;
     margin: 0px 0px 7px 0px;
+}
+
+.butmon:active {
+    box-shadow: 3px 3px 30px 0 plum;
 }
 
 .counter {
@@ -47,4 +51,20 @@
     border: 5px solid rgb(116, 218, 33);
     border-radius: 10px;
     text-align: center;
+    /*font-size: 50px;*/
+
+    /*font: inherit;*/
+    color: greenyellow;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+    font-size: 40px;
 }
+
+.inputs:focus {
+        box-shadow: 3px 3px 50px 0 plum;
+    }
+
+
+

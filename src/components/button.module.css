@@ -25,3 +25,10 @@
     width: 100%;
 }
 
+.button:active {
+    box-shadow: 3px 3px 50px 0 plum;
+}
+
+.disbutton:active {
+    box-shadow: 1px 1px 50px 0 red;
+}
