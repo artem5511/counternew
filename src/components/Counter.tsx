@@ -23,14 +23,14 @@ export const Counter = (props: CounterPropsType) => {
                 />
             </div>
             <div className={e.but}>
-                <div className={e.buts}>
+                <div>
                     <Button disabled={disabled}
                             name={'Inc'}
                             callback={props.Inc}
                             value={props.startValue}
                     />
                 </div>
-                <div className={e.buts}>
+                <div>
                     <Button name={'Reset'}
                             callback={props.Reset}
                             disabled={disabled2}

@@ -1,6 +1,5 @@
 import {Button} from "./Button";
 import e from './setсounter.module.css';
-import w from './button.module.css';
 
 type CounterPropsType = {
     Inc: () => void
@@ -11,10 +10,11 @@ type CounterPropsType = {
 }
 
 export const Setcounter = (props: CounterPropsType) => {
+
     return (
         <div>
             <div className={e.counter}>
-                <div className={e.butmon}>
+                <div className={e.butmon} onClick={props.Inc}>
                     <Button name={'SET'} callback={props.Inc} value={999}/>
                 </div>
             </div>

@@ -1,6 +1,5 @@
 
 .button {
-    border: none;
     font: inherit;
     color: greenyellow;
     background-color: transparent;
@@ -8,12 +7,14 @@
     считают, что необходимо оставлять стрелочный вид для кнопок */
     cursor: pointer;
     font-size: 40px;
+    border: 5px solid rgb(116, 218, 33);
+    border-radius: 10px;
+    margin: 10px;
+    width: 145px;
     height: 100px;
-    width: 100%;
 }
 
 .disbutton {
-    border: none;
     font: inherit;
     color: red;
     background-color: transparent;
@@ -21,8 +22,11 @@
     считают, что необходимо оставлять стрелочный вид для кнопок */
     cursor: pointer;
     font-size: 40px;
+    border: 5px solid red;
+    border-radius: 10px;
+    margin: 10px;
+    width: 145px;
     height: 100px;
-    width: 100%;
 }
 
 .button:active {
