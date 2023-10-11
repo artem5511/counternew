@@ -30,7 +30,7 @@ export const Setcounter = (props: CounterPropsType) => {
                 <div className={e.incont}>
                     <input className={e.inputs} type="number"
                            disabled={props.disabled}/>
-                    {'start value'}
+                    {'start start'}
                 </div>
             </div>
         </div>

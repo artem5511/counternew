@@ -2,6 +2,7 @@ import {Button} from "./Button";
 import {Monitor} from "./Monitor";
 import e from './сounter.module.css';
 
+
 type CounterPropsType = {
     Inc: () => void
     Reset: () => void
@@ -23,20 +24,21 @@ export const Counter = (props: CounterPropsType) => {
                 />
             </div>
             <div className={e.but}>
-                <div>
+                <div className={e.buts}>
                     <Button disabled={disabled}
                             name={'Inc'}
                             callback={props.Inc}
                             value={props.startValue}
                     />
                 </div>
-                <div>
+                <div className={e.buts}>
                     <Button name={'Reset'}
                             callback={props.Reset}
                             disabled={disabled2}
                             value={props.startValue}
-                />
+                    />
                 </div>
+
             </div>
         </div>
     )
