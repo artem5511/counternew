@@ -15,7 +15,7 @@ export const Counter = (props: CounterPropsType) => {
     const disabled = props.startValue === props.maxValue
     const disabled2 = props.startValue === 0
     return (
-        <div>
+        <div className={e.divmain}>
             <div className={e.counter}>
                 <Monitor
                     value={props.startValue}

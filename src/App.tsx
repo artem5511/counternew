@@ -18,7 +18,7 @@ export const App = () => {
     }
 
     const setToLocalstorageHandler = () => {
-        localStorage.setItem('counterValue', JSON.stringify(startValue,maxValue))
+        localStorage.setItem('counterValue', JSON.stringify(startValue))
     }
 
     const getFromLocalStorage = () => {
@@ -44,10 +44,7 @@ export const App = () => {
             <Setcounter
                 startValue={startValue}
                 maxValue={maxValue}
-                Inc={Inc}
-                Reset={Reset}
                 disabled={disabled}
-                value={startValue}
                 setToLocalstorageHandler={setToLocalstorageHandler}
             />
             <Counter

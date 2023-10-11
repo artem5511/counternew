@@ -10,11 +10,8 @@ type CounterPropsType = {
 }
 
 export const Setcounter = (props: CounterPropsType) => {
-    const divStyle = {
-       height: '300px'
-    }
     return (
-        <div>
+        <div className={e.divmain}>
             <div className={e.counter}>
                 <div className={e.butmon}>
                     <Button
@@ -26,11 +23,14 @@ export const Setcounter = (props: CounterPropsType) => {
                 </div>
             </div>
             <div className={e.but}>
-                <div>
+                <div className={e.incont}>
                     <input className={e.inputs} type="number"/>
+                    {"max value"}
                 </div>
-                <div>
-                    <input className={e.inputs} type="number"/>
+                <div className={e.incont}>
+                    <input className={e.inputs} type="number"
+                           disabled={props.disabled}/>
+                    {'start value'}
                 </div>
             </div>
         </div>
