@@ -30,9 +30,8 @@
     height: 35%;
 }
 
-
-
 .inputs {
+    outline: 0;
     display: flex;
     border: 5px solid rgb(116, 218, 33);
     border-radius: 10px;
