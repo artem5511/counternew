@@ -10,7 +10,22 @@
     font-size: 70px;
     color: greenyellow;
     margin: 0px 0px 7px 0px;
+
 }
+.button {
+    border: 5px solid rgb(116, 218, 33);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 300px;
+    /*background-color: black;*/
+    font-size: 70px;
+    color: greenyellow;
+    margin: 0px 0px 7px 0px;
+}
+
 
 .counter {
     display: flex;
@@ -33,18 +48,60 @@
     /*background-color: black;*/
     /*margin: 0px 0px 7px 0px;*/
 }
-.buts {
-    margin: 13px;
+<<<<<<< HEAD
+.inputdiv {
     width: 130px;
     height: 100px;
     border: 5px solid rgb(116, 218, 33);
     border-radius: 10px;
 }
-.inputs {
-    margin: 13px;
+.input {
     width: 130px;
-    height: 100px;
+    height: 50px;
+=======
+/*.buts {*/
+/*    margin: 13px;*/
+/*    width: 130px;*/
+/*    height: 100px;*/
+/*    border: 5px solid rgb(116, 218, 33);*/
+/*    border-radius: 10px;*/
+/*}*/
+.inputs {
+    height: 90px;
+>>>>>>> e88f3b52f1360b32b9fd61c610aba6441e50e4fe
     border: 5px solid rgb(116, 218, 33);
     border-radius: 10px;
     text-align: center;
+    /*font-size: 50px;*/
+
+    /*font: inherit;*/
+    color: greenyellow;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+    font-size: 40px;
+    margin: 10px;
+    width: 130px;
 }
+<<<<<<< HEAD
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /*border-radius: 10px;*/
+    /*height: 150px;*/
+
+    /*background-color: black;*/
+    /*margin: 0px 0px 7px 0px;*/
+}
+=======
+
+.inputs:focus {
+        box-shadow: 3px 3px 50px 0 plum;
+    }
+
+
+
+>>>>>>> e88f3b52f1360b32b9fd61c610aba6441e50e4fe
