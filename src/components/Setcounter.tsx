@@ -12,7 +12,6 @@ type CounterPropsType = {
 }
 
 export const Setcounter = (props: CounterPropsType) => {
-    // const [title, setTitle] = useState<string>(props.title)
     const onChangeSetLocalTitle = (event: ChangeEvent<HTMLInputElement>) => props.setValue(event.currentTarget.value)
     return (
         <div className={e.divmain}>
@@ -29,8 +28,7 @@ export const Setcounter = (props: CounterPropsType) => {
                     <span>max value</span>
                 </div>
                 <div className={e.incont}>
-                    <input className={e.inputs} type="number"
-                           disabled={props.disabled}/>
+                    <input className={e.inputs} type="number"/>
                     <span>start value</span>
                 </div>
             </div>

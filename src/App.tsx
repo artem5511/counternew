@@ -5,10 +5,10 @@ import {Setcounter} from "./components/Setcounter";
 
 export const App = () => {
     // let maxValue = 5
-    let [maxValue, setValue] = useState<number>(5);
+    let [maxValue, setValue] = useState<number>(4);
     // let startValue = 0
 
-    let [startValue, setCount] = useState<number>(0);
+    let [startValue, setCount] = useState<number>(1);
     let [valueCount, setValueCount] = useState(startValue);
     // let [disable, setDisabled] = useState(false)
     const Inc = () => {
@@ -19,6 +19,9 @@ export const App = () => {
         setValueCount(startValue)
     }
     console.log(maxValue)
+    console.log(valueCount)
+    console.log(startValue)
+    console.log(valueCount===maxValue)
 
     const setToLocalstorageHandler = () => {
         localStorage.setItem('counterValue', JSON.stringify(startValue))
@@ -32,22 +35,19 @@ export const App = () => {
         }
     }
 
-    const disabled = startValue === maxValue
-
     return (
         <>
-            <button onClick={getFromLocalStorage}>GET</button>
-            <div>
-                <h3>{startValue}</h3>
-            </div>
-            <div>
-                <h3>LocalStorage</h3>
-            </div>
+            {/*<button onClick={getFromLocalStorage}>GET</button>*/}
+            {/*<div>*/}
+            {/*    <h3>{startValue}</h3>*/}
+            {/*</div>*/}
+            {/*<div>*/}
+            {/*    <h3>LocalStorage</h3>*/}
+            {/*</div>*/}
 
             <Setcounter
                 startValue={startValue}
                 maxValue={maxValue}
-                disabled={disabled}
                 setToLocalstorageHandler={setToLocalstorageHandler}
                 setValue={setValue}
 
