@@ -23,10 +23,9 @@ export const App = () => {
     console.log(startValue)
     console.log(valueCount===maxValue)
 
-    // const setToLocalstorageHandler = () => {
-    //     localStorage.setItem('counterValue', JSON.stringify(startValue))
-    // }
-    //
+    const setToLocalstorageHandler = () => {
+        localStorage.setItem('counterValue', JSON.stringify(startValue))
+    }
     // const getFromLocalStorage = () => {
     //     let startValueSave = localStorage.getItem('counterValue')
     //     if (startValueSave) {
@@ -47,7 +46,7 @@ export const App = () => {
             <Setcounter
                 startValue={startValue}
                 maxValue={maxValue}
-                // setToLocalstorageHandler={setToLocalstorageHandler}
+                setToLocalstorageHandler={setToLocalstorageHandler}
                 setValue={setValue}
             />
             <Counter

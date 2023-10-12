@@ -2,7 +2,6 @@ import {Button} from "./Button";
 import {Monitor} from "./Monitor";
 import e from './сounter.module.css';
 
-
 type CounterPropsType = {
     Inc: () => void
     Reset: () => void
@@ -13,7 +12,6 @@ type CounterPropsType = {
 }
 
 export const Counter = (props: CounterPropsType) => {
-
     const disabled = props.valueCount >= props.maxValue
     const disabled2 = props.valueCount == props.startValue
     return (
@@ -39,7 +37,6 @@ export const Counter = (props: CounterPropsType) => {
                             value={props.startValue}
                     />
                 </div>
-
             </div>
         </div>
     )
