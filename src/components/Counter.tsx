@@ -14,8 +14,8 @@ type CounterPropsType = {
 
 export const Counter = (props: CounterPropsType) => {
 
-    const disabled = props.valueCount === props.maxValue
-    const disabled2 = props.valueCount === 0
+    const disabled = props.valueCount >= props.maxValue
+    const disabled2 = props.valueCount == props.startValue
     return (
         <div className={e.divmain}>
             <div className={e.counter}>
