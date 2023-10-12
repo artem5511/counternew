@@ -23,17 +23,17 @@ export const App = () => {
     console.log(startValue)
     console.log(valueCount===maxValue)
 
-    const setToLocalstorageHandler = () => {
-        localStorage.setItem('counterValue', JSON.stringify(startValue))
-    }
-
-    const getFromLocalStorage = () => {
-        let startValueSave = localStorage.getItem('counterValue')
-        if (startValueSave) {
-            let newValue = JSON.parse(startValueSave)
-            setCount(newValue)
-        }
-    }
+    // const setToLocalstorageHandler = () => {
+    //     localStorage.setItem('counterValue', JSON.stringify(startValue))
+    // }
+    //
+    // const getFromLocalStorage = () => {
+    //     let startValueSave = localStorage.getItem('counterValue')
+    //     if (startValueSave) {
+    //         let newValue = JSON.parse(startValueSave)
+    //         setCount(newValue)
+    //     }
+    // }
 
     return (
         <>
@@ -44,13 +44,11 @@ export const App = () => {
             {/*<div>*/}
             {/*    <h3>LocalStorage</h3>*/}
             {/*</div>*/}
-
             <Setcounter
                 startValue={startValue}
                 maxValue={maxValue}
-                setToLocalstorageHandler={setToLocalstorageHandler}
+                // setToLocalstorageHandler={setToLocalstorageHandler}
                 setValue={setValue}
-
             />
             <Counter
                 startValue={startValue}

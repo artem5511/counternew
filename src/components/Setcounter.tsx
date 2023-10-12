@@ -7,7 +7,7 @@ type CounterPropsType = {
     disabled?: boolean
     startValue: number
     maxValue: number
-    setToLocalstorageHandler: () => void
+    // setToLocalstorageHandler: () => void
     setValue: (event:any)=> void
 }
 
@@ -18,7 +18,7 @@ export const Setcounter = (props: CounterPropsType) => {
                 <div className={e.butmon}>
                     <Button
                         name={'SET'}
-                        callback={props.setToLocalstorageHandler}
+                        // callback={props.setToLocalstorageHandler}
                         value={props.maxValue}
                     />
                 </div>
