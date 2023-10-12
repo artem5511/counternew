@@ -5,11 +5,11 @@ import {Setcounter} from "./components/Setcounter";
 
 export const App = () => {
     // let maxValue = 5
-    let [maxValue, setValue] = useState<number>(4);
+    let [maxValue, setValue] = useState<number>(3);
     // let startValue = 0
 
-    let [startValue, setCount] = useState<number>(1);
-    let [valueCount, setValueCount] = useState(startValue);
+    let [startValue, setCount] = useState<number>(0);
+    let [valueCount, setValueCount] = useState<number>(startValue);
     // let [disable, setDisabled] = useState(false)
     const Inc = () => {
         // if (startValue < maxValue) {
@@ -48,6 +48,7 @@ export const App = () => {
                 maxValue={maxValue}
                 setToLocalstorageHandler={setToLocalstorageHandler}
                 setValue={setValue}
+                setCount={setCount}
             />
             <Counter
                 startValue={startValue}
