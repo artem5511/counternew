@@ -7,15 +7,18 @@ export const App = () => {
     // let maxValue = 5
     let [maxValue, setValue] = useState<number>(5);
     // let startValue = 0
+
     let [startValue, setCount] = useState<number>(0);
+    let [valueCount, setValueCount] = useState(startValue);
     // let [disable, setDisabled] = useState(false)
     const Inc = () => {
         // if (startValue < maxValue) {
-        setCount(startValue + 1)
+        setValueCount(valueCount + 1)
     }
     const Reset = () => {
-        setCount(0)
+        setValueCount(startValue)
     }
+    console.log(maxValue)
 
     const setToLocalstorageHandler = () => {
         localStorage.setItem('counterValue', JSON.stringify(startValue))
@@ -46,10 +49,13 @@ export const App = () => {
                 maxValue={maxValue}
                 disabled={disabled}
                 setToLocalstorageHandler={setToLocalstorageHandler}
+                setValue={setValue}
+
             />
             <Counter
                 startValue={startValue}
                 maxValue={maxValue}
+                valueCount={valueCount}
                 Inc={Inc}
                 Reset={Reset}
                 // value={startValue}

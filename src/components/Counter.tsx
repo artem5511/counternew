@@ -9,17 +9,18 @@ type CounterPropsType = {
     // value: number
     startValue: number
     maxValue: number
+    valueCount: number
 }
 
 export const Counter = (props: CounterPropsType) => {
 
-    const disabled = props.startValue === props.maxValue
-    const disabled2 = props.startValue === 0
+    const disabled = props.valueCount === props.maxValue
+    const disabled2 = props.valueCount === 0
     return (
         <div className={e.divmain}>
             <div className={e.counter}>
                 <Monitor
-                    value={props.startValue}
+                    value={props.valueCount}
                     maxValue={props.maxValue}
                 />
             </div>
