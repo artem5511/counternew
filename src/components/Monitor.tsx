@@ -2,15 +2,15 @@ import React from "react";
 import s from './monitor.module.css';
 
 type MonPropsType={
-    value: number
+    valueCount: number
     maxValue: number
 }
 export const Monitor = (props: MonPropsType) => {
-    console.log(props.value)
+    console.log(props.valueCount)
     return (
         <div>
-            <div className={props.value == props.maxValue ? s.rmonitor : s.gmonitor}>
-                {props.value}
+            <div className={props.valueCount == props.maxValue ? s.rmonitor : s.gmonitor}>
+                {props.valueCount}
             </div>
         </div>
     )

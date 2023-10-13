@@ -18,7 +18,7 @@ export const Counter = (props: CounterPropsType) => {
         <div className={e.divmain}>
             <div className={e.counter}>
                 <Monitor
-                    value={props.valueCount}
+                    valueCount={props.valueCount}
                     maxValue={props.maxValue}
                 />
             </div>

@@ -26,8 +26,8 @@ export const Setcounter = (props: CounterPropsType) => {
             </div>
             <div className={e.but}>
                 <div className={e.incont}>
-                    {/*<input className={e.inputs} type="number" onChange={onChangeSetLocalStartValue}/>*/}
-                    {/*<span>start value</span>*/}
+                    <input className={e.inputs} type="number" onChange={onChangeSetLocalStartValue}/>
+                    <span>start value</span>
                 </div>
                 <div className={e.incont}>
                     <input className={e.inputs} type="number" onChange={onChangeSetLocalMaxValue}/>

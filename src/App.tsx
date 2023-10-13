@@ -5,7 +5,7 @@ import {Setcounter} from "./components/Setcounter";
 
 export const App = () => {
     // let maxValue = 5
-    let [maxValue, setValue] = useState<number>(3);
+    let [maxValue, setValue] = useState<number>(10);
     // let startValue = 0
 
     let [startValue, setCount] = useState<number>(0);
@@ -13,11 +13,13 @@ export const App = () => {
     // let [disable, setDisabled] = useState(false)
     const Inc = () => {
         // if (startValue < maxValue) {
-        setValueCount(valueCount + 1)
+        setValueCount(Number(valueCount) + 1)
     }
+    console.log(typeof valueCount)
     const Reset = () => {
-        setValueCount(startValue)
+        setValueCount(Number(startValue))
     }
+    console.log(typeof maxValue)
     console.log(maxValue)
     console.log(valueCount)
     console.log(startValue)
