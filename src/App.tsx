@@ -17,7 +17,7 @@ export const App = () => {
     }
     console.log(typeof valueCount)
     const Reset = () => {
-        setValueCount(Number(startValue))
+        setValueCount(startValue)
     }
     console.log(typeof maxValue)
     console.log(maxValue)

@@ -3,7 +3,6 @@ import e from './setсounter.module.css';
 import {ChangeEvent, useState} from "react";
 
 type CounterPropsType = {
-    // value: number
     disabled?: boolean
     startValue: number
     maxValue: number
