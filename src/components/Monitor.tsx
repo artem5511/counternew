@@ -6,7 +6,6 @@ type MonPropsType={
     maxValue: number
 }
 export const Monitor = (props: MonPropsType) => {
-    console.log(props.valueCount)
     return (
         <div>
             <div className={props.valueCount == props.maxValue ? s.rmonitor : s.gmonitor}>
