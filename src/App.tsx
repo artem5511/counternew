@@ -16,14 +16,13 @@ export const App = () => {
         setValueCount(Number(valueCount) + 1)
         console.log(valueCount)
     }
-    console.log(typeof valueCount)
     const Reset = () => {
         setValueCount(startValue)
     }
-    console.log(typeof maxValue)
-    console.log(maxValue)
-    console.log(valueCount)
+    // console.log(typeof maxValue)
     console.log(startValue)
+    console.log(valueCount)
+    console.log(maxValue)
     console.log(valueCount===maxValue)
 
     const setToLocalstorageHandler = () => {
