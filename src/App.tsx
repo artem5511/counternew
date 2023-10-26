@@ -14,6 +14,7 @@ export const App = () => {
     const Inc = () => {
         // if (startValue < maxValue) {
         setValueCount(Number(valueCount) + 1)
+        console.log(valueCount)
     }
     console.log(typeof valueCount)
     const Reset = () => {
